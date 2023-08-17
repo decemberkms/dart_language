@@ -6,5 +6,7 @@ void main() {
     4,
   };
   numbers.add(1);
-  print(numbers);
+  final a = numbers.toList();
+  a.add(1);
+  print(a);
 }
