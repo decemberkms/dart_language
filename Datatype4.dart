@@ -6,5 +6,6 @@ void main() {
     'Tok',
     for (var friend in names) "* $friend",
   ];
+  // collection for
   print(newNames);
 }
