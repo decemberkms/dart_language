@@ -1,4 +1,4 @@
-String sayHello({String name = "Someone"}) {
+String sayHello({required String name}) {
   return "Hello $name";
 }
 
