@@ -2,7 +2,7 @@ class Player {
   late String name;
   late int xp;
 
-  Player(this.name, this.xp);
+  Player({this.name, this.xp});
 
   void sayHello() {
     print("Hi ${this.name}. Xp is ${this.xp}");
@@ -10,8 +10,8 @@ class Player {
 }
 
 void main() {
-  var player1 = Player('min', 100);
-  var player2 = Player('pee', 100);
+  var player1 = Player(name: 'min', xp: 100);
+  var player2 = Player(name: 'pee', xp: 100);
 
   player1.sayHello();
   player2.sayHello();
