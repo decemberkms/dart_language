@@ -2,7 +2,7 @@ class Player {
   late String name;
   late int xp;
 
-  Player({this.name, this.xp});
+  Player({required this.name, required this.xp});
 
   void sayHello() {
     print("Hi ${this.name}. Xp is ${this.xp}");
