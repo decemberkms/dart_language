@@ -1,7 +1,8 @@
 class Player {
-  final String name = 'min';
+  String name = 'min';
   int xp = 100;
 
+  Player({this.name = "t", this.xp = 10});
   void sayHello() {
     print("Hi ${this.name}");
   }
