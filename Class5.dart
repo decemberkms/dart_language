@@ -1,6 +1,10 @@
+abstract class Human {
+  void walk();
+}
+
 enum Team { a, b }
 
-class Player {
+class Player extends Human {
   String name;
   Team team;
   int xp, age;
@@ -14,6 +18,11 @@ class Player {
   void sayHello() {
     print("Hi ${this.name}. Xp is ${this.xp}, age is ${this.age}");
   }
+
+  @override
+  void walk() {
+    print("${this.name} walking");
+  }
 }
 
 void main() {
@@ -22,7 +31,8 @@ void main() {
     ..age = 10
     ..xp = 11
     ..team = Team.b
-    ..sayHello();
+    ..sayHello()
+    ..walk();
 
   // cascade opertor
 }
