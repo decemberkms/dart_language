@@ -7,9 +7,13 @@ class Human {
   }
 }
 
+mixin Strong {
+  final double strenghtLevel = 120120;
+}
+
 enum Team { a, b }
 
-class Player extends Human {
+class Player extends Human with Strong {
   final Team team;
   Player({required this.team, required super.name, required super.age});
 
@@ -24,4 +28,5 @@ class Player extends Human {
 void main() {
   var player1 = Player(name: 'din', age: 21, team: Team.a);
   player1.sayHello();
+  print(player1.strenghtLevel);
 }

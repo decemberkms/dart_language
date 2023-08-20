@@ -1,4 +1,8 @@
-class Player {
+mixin Strong {
+  final double strenghtLevel = 120120;
+}
+
+class Player with Strong {
   final String name;
   int xp;
   String team;
