@@ -1,6 +1,6 @@
 class Human {
   final String name;
-  Human(this.name, this.age);
+  Human({required this.name, required this.age});
   int age;
   void sayHello() {
     print("my name is ${this.name}");
@@ -11,8 +11,7 @@ enum Team { a, b }
 
 class Player extends Human {
   final Team team;
-  Player({required this.team, required String name, required int age})
-      : super(name, age);
+  Player({required this.team, required super.name, required super.age});
 
   @override
   void sayHello() {
