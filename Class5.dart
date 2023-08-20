@@ -1,6 +1,8 @@
+enum Team { a, b }
+
 class Player {
   String name;
-  String team;
+  Team team;
   int xp, age;
 
   Player(
@@ -15,11 +17,11 @@ class Player {
 }
 
 void main() {
-  var player1 = Player(name: 'min', xp: 100, team: 'a', age: 25)
+  var player1 = Player(name: 'min', xp: 100, team: Team.a, age: 25)
     ..name = 'new'
     ..age = 10
     ..xp = 11
-    ..team = 'b'
+    ..team = Team.b
     ..sayHello();
 
   // cascade opertor
